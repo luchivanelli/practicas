@@ -1,0 +1,217 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.margin {
+    margin-top: 260px;
+}
+
+.header {
+    margin-top: -260px;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    background-image: url(https://www.entrenamiento.com/wp-content/uploads/2020/01/fruta-temporada-calendariojpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.header-ver {
+    border-bottom: 5px solid #ADCF9F;
+    border-top: 5px solid #ADCF9F;
+}
+
+.header-fru {
+    border-bottom: 5px solid #f1caa1;
+    border-top: 5px solid #f1caa1;
+}
+
+.logo {
+    width: 140px;
+    border-radius: 50%;
+    display: block;
+    margin: 5px auto;
+}
+
+.nav {
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav-ver {
+    background-color: #013c1f;
+}
+
+.nav-ver a:hover {
+    color: #ADCF9F;
+    transform: scale(1.05);
+}
+
+.nav-fru {
+    background-color: #bd690f;
+}
+
+.nav-fru a:hover {
+    color: #f1caa1;
+    transform: scale(1.05);
+}
+
+.nav a {
+    color: #FFF;
+    margin: 0 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer {
+    height: 60px;
+    background-color: #ADCF9F;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 80px;
+}
+
+.verduras {
+    background-color: #dffbe2;
+}
+
+.frutas {
+    background-color: #fbe7d4;
+}
+
+#buscador {
+    display: block;
+    margin: 50px auto;
+    width: 400px;
+    height: 30px;
+    padding-left: 10px;
+    border: 3px solid #013c1f;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.lista-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 50px;
+    padding: 20px 80px;
+}
+
+.producto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #000;
+    max-width: 500px;
+}
+
+.verdura:hover {
+    transform: scale(1.02);
+    background-color: #91bf7f;
+}
+
+.verdura {
+    background-color: #ADCF9F;
+}
+
+.fruta {
+    background-color: #f6b978;
+}
+
+.fruta:hover {
+    transform: scale(1.02);
+    background-color: #f2a24c;
+}
+
+/* .producto img {
+    height: calc(100% - 500px);
+    object-fit: contain;
+} */
+
+.producto img {
+    background-color: #FFF;
+    margin-top: 20px;
+    border-radius: 8px;
+    width: 200px;
+    padding: 20px;
+}
+
+.titulo-producto {
+    font-size: 22px;
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: 0;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.titulo-ver {
+    color: #013c1f;
+}
+
+.titulo-fru {
+    color: #6e3900;
+}
+
+.precio {
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+}
+
+.añadir-carrito {
+    margin: 20px 0;
+    border: 2px solid #000000;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.añadir-carrito:hover {
+    animation: buttonColor 0.5s forwards;
+}
+
+@keyframes buttonColor {
+    100% {
+        color: #FFF;
+        background-color: #000000;
+        border-color: #FFF;
+    }
+}
+
+.filtro {
+    display: none;
+}
+
+.footer p {
+    margin-right: 20px;
+}
+
+.footer-fru {
+    background-color: #bd690f;
+}
+
+.agregado {
+    animation: elementoAgregado 2s forwards;
+}
+
+.agregado.añadir-carrito:hover {
+    animation: none;
+    background-color: #0fab0f;
+}
+
+@keyframes elementoAgregado {
+    100% {
+        background-color: #0fab0f;
+    }
+}

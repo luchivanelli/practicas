@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteo por lista</title>
+</head>
+<body>
+    <section class="winners-section"></section>
+    <!-- <nav class="navbar">
+        <img src="logoPeña.jpeg" alt="logo" class="logo">
+        <p>Peña Arroyo Seco es de Boca</p>
+    </nav> -->
+    <main class="main">
+        <section class="first-section" id="first-section">
+            <div class="container">
+                <!-- <img src="https://pbs.twimg.com/media/B27H0dmCIAEfkxp?format=jpg&name=4096x4096" class="img-boca"> -->
+                <img src="peña.jpeg" class="img-boca">
+                <img src="logoPeña.jpeg" class="img-boca logo">
+            </div>
+            <form class="form">
+                <p class="title">Sorteo por nombres al azar</p>
+                <div class="form-sections">
+                    <div class="form-section first">
+                        <label for="title-input">Título</label>
+                        <div class="form-title">
+                            <input type="text" name="form-title" class="title-input" placeholder="Escriba un título.." id="title-input" required>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <label for="winners-input">Cantidad de ganadores</label>
+                        <div class="winners">
+                            <input type="number" name="winners-input" class="winners-input" placeholder="..." required>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <label for="participants-input">Participantes</label>
+                        <div class="form-participants">
+                            <textarea type="text" name="form-participants" class="participants-input"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button class="form-button">Comenzar</button>
+            </form>
+        </section>
+        <p class="luchi">Copyright © 2022 by Luciana Vanelli</p>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
