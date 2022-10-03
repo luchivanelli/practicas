@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.navbar {
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 10px;
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+/* .navbar p {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 10%, #FFFF00 50%, #121FCF 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-boca {
+    /* height: 250px; */
+    height: 350px;
+    width: 36%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.first-section {
+    background-color: black;
+    width: 50%;
+    margin: auto;
+}
+
+.form {
+    background-color: #0e0f38;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.title {
+    font-size: 26px;
+    margin: 20px auto;
+    color: white;
+    padding: 28px;
+    letter-spacing: 2px;
+}
+
+.form-sections {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 250px;
+}
+
+.form-section {
+    padding: 0 20px;
+}
+
+.first {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.title-input, .participants-input, .winners-input {
+    width: 350px;
+    margin: 5px 0;
+    background-color: #f3c41f;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 1px solid #0C1713;
+}
+
+.title-input {
+    height: 28px;  
+    margin-bottom: 30px;
+}
+
+.participants-input {
+    height: 240px;
+    resize: none;
+}
+
+.winners-input {
+    height: 28px; 
+    width: 60px;
+    text-align: center;
+}
+
+.title-input:focus, .participants-input:focus, .winners-input:focus {
+    background-color: white;
+}
+
+.form-section label {
+    font-size: 20px;
+    color: white;
+}
+
+.form-button {
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 20px;
+    border: 2.5px solid #FFF;
+    background: transparent;
+    color: #D9D0DE;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.form-button:hover {
+    animation-name: button-color1;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes button-color1 {
+    100% {
+        background-color: #f3c41f;
+        color: #0C1713;
+    }
+}
+
+.winners-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+    z-index: 1;
+}
+
+.winners-name {
+    background-color: #FFF;
+    text-align: center;
+    padding: 30px 100px;
+}
+
+.p1, .p2 {
+    color: #000;
+    padding: 30px 0;
+    line-height: 40px;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.p2 {
+    font-size: 30px;
+    padding: 20px 30px;
+    background-color: #0e0f38;
+    color: #f3c41f;
+    letter-spacing: 2px;
+    margin: 40px 0;
+    line-height: 50px;
+}
+
+@keyframes aparecer {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    100% {
+        display: flex;
+        opacity: 1;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.counter {
+    font-size: 32px;
+    font-weight: 700;
+    background-color: #0e0f38;
+    color: #f3c41f;
+    border-radius: 50%;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.counter-end {
+    visibility: hidden;
+}
+
+.luchi {
+    color: #FFF;
+    width: 50%;
+    text-align: end;
+    margin: auto;
+    padding: 10px;
+    padding-right: 40px;
+}
+

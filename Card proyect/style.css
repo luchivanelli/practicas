@@ -1,0 +1,93 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.main {
+    display: flex;
+    height: 96vh;
+}
+
+.card {
+    width: 40%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    justify-content: center;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+    flex-basis: 50%;
+}
+
+.content-main {
+    padding: 40px;
+    flex-basis: 50%;
+}
+
+.element {
+    letter-spacing: 6px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: 42px;
+    font-family: 'Fraunces', serif;
+    width: 80%;
+    margin: 0;
+    line-height: 42px;
+    color: hsl(212, 21%, 14%);
+}
+
+.description {
+    color: hsl(228, 12%, 48%);
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 26px;
+    width: 90%;
+    letter-spacing: 1px;
+}
+
+.prices {
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.price-1 {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.price-2 {
+    margin-left: 30px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 56px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.button i {
+    color: hsl(0, 0%, 100%);
+}
