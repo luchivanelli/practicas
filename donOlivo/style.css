@@ -1,3 +1,10 @@
+:root {
+    --gris: #CDD1DE;
+    --negro: #000;
+    --blanco: #FFF;
+    --verde: #7ed957;
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
     margin: 0;
@@ -5,35 +12,33 @@ body {
 }
 
 .margin {
-    margin-top: 280px;
+    margin-top: 146px;
 }
 
 .header {
-    margin-top: -280px;
-    height: 150px;
+    margin-top: -146px;
+    height: 140px;
     width: 100%;
     position: fixed;
-    border-bottom: 5px solid #b6b6b6;
-    border-top: 5px solid #b6b6b6;
-    background-image: url(https://www.entrenamiento.com/wp-content/uploads/2020/01/fruta-temporada-calendariojpg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
+    border-bottom: 3px solid var(--gris);
+    border-top: 3px solid var(--gris);
+    background-color: var(--negro);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 4;
 }
 
 .logo {
-    width: 140px;
+    width: 120px;
     border-radius: 50%;
-    display: block;
-    margin: 5px auto;
+    padding: 0 100px;
 }
 
 .nav {
     height: 40px;
-    background-color: #000000;
-    margin-top: 10px;
+    background-color: var(--negro);
     display: flex;
-    justify-content: end;
     align-items: center;
 }
 
@@ -45,14 +50,134 @@ body {
 }
 
 .nav a:hover {
-    color: #b6b6b6;
+    color: var(--gris);
     transform: scale(1.05);
 }
 
+.section-1 {
+    background-color: var(--gris);
+    display: flex;
+    padding-bottom: 3px;
+}
+
+.bienvenida {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenida h3 {
+    color: var(--verde);
+    font-size: 70px;
+    -webkit-text-stroke: 1px black;
+    margin: 0;
+    animation: h3 2s forwards;
+}
+
+@keyframes h3 {
+    0% {
+        transform: translateX(-400px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.p1 {
+    margin: 0;
+    font-size: 40px;
+    margin-left: -160px;
+    animation: p1 2s forwards;
+}
+
+@keyframes p1 {
+    0% {
+        transform: translateY(-400px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.p2 {
+    margin: 0;
+    font-size: 24px;
+    margin-right: -80px;
+    animation: p2 2s forwards;
+}
+
+@keyframes p2 {
+    0% {
+        transform: translateX(-600px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.slides {
+    position: relative;
+    background-color: var(--negro);
+    overflow: hidden;
+    height: 740px;
+    width: 60%;
+    margin: 40px 0;
+    margin-right: 80px;
+    z-index: 1;
+}
+
+.slides::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    background-color: rgb(0, 0, 0 / 50%);
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: cycle 12s infinite;
+}
+
+.slide-2 {
+    animation-delay: 4s;
+}
+
+.slide-3 {
+    animation-delay: 8s;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes cycle {
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    20% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    30% {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+    100% {opacity: 0;}
+}
+
+.section-2 {
+    background-color: var(--verde);
+}
 
 .footer {
     height: 60px;
-    background-color: #b6b6b6;
+    background-color: var(--gris);
     display: flex;
     align-items: center;
     justify-content: end;

@@ -1,3 +1,10 @@
+:root {
+    --gris: #CDD1DE;
+    --negro: #000;
+    --blanco: #FFF;
+    --verde: #7ed957;
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
     margin: 0;
@@ -5,61 +12,34 @@ body {
 }
 
 .margin {
-    margin-top: 260px;
+    margin-top: 146px;
 }
 
 .header {
-    margin-top: -260px;
-    height: 150px;
+    margin-top: -146px;
+    height: 140px;
     width: 100%;
     position: fixed;
-    background-image: url(https://www.entrenamiento.com/wp-content/uploads/2020/01/fruta-temporada-calendariojpg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-}
-
-.header-ver {
-    border-bottom: 5px solid #ADCF9F;
-    border-top: 5px solid #ADCF9F;
-}
-
-.header-fru {
-    border-bottom: 5px solid #f1caa1;
-    border-top: 5px solid #f1caa1;
+    border-bottom: 3px solid var(--gris);
+    border-top: 3px solid var(--gris);
+    background-color: var(--negro);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 4;
 }
 
 .logo {
-    width: 140px;
+    width: 120px;
     border-radius: 50%;
-    display: block;
-    margin: 5px auto;
+    padding: 0 100px;
 }
 
 .nav {
     height: 40px;
-    margin-top: 10px;
+    background-color: var(--negro);
     display: flex;
-    justify-content: end;
     align-items: center;
-}
-
-.nav-ver {
-    background-color: #013c1f;
-}
-
-.nav-ver a:hover {
-    color: #ADCF9F;
-    transform: scale(1.05);
-}
-
-.nav-fru {
-    background-color: #bd690f;
-}
-
-.nav-fru a:hover {
-    color: #f1caa1;
-    transform: scale(1.05);
 }
 
 .nav a {
@@ -67,6 +47,11 @@ body {
     margin: 0 30px;
     font-size: 20px;
     text-decoration: none;
+}
+
+.nav a:hover {
+    color: var(--gris);
+    transform: scale(1.05);
 }
 
 .footer {
@@ -84,6 +69,19 @@ body {
 
 .frutas {
     background-color: #fbe7d4;
+}
+
+.section-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -40px;
+}
+
+.section-title p {
+    font-size: 40px;
+    letter-spacing: 4px;
 }
 
 #buscador {
@@ -141,6 +139,8 @@ body {
     margin-top: 20px;
     border-radius: 8px;
     width: 200px;
+    height: 200px;
+    object-fit: contain;
     padding: 20px;
 }
 
